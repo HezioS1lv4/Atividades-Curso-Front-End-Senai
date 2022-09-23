@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+:root{
+    --fonte-principal :'Aboreto', cursive;
+}
+header
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+#background{
+    height: 40em;
+    position: static;
+}
+
+h1{
+    color: blueviolet;
+    background-color: black;
+    text-align: center;
+}
+body{
+    background-color: whitesmoke;
+}
+
+p{
+    color: blueviolet;
+}
+section.carrosel{
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+section.carrosel img{
+    object-fit: cover;
+    width: 63.125em;
+    height: 450px;
+}
+
+div.container{
+    display: flex;
+    transform: translateX(0);
+    color: black;
+
+}
