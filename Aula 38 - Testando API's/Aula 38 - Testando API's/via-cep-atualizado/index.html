@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIA CEP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <img src="carregar.gif" alt="">
+    </div>
+    <div class="formulario">
+        <h1>VALIDA CEP</h1>
+        <form action="" method="post">
+            <div class="box box-1">
+                <label for="">Nome</label>
+                <input type="text" name="" id="nome">
+            </div>
+            <div class="box box-2">
+                <label for="">Email</label>
+                <input type="email" name="" id="email">
+            </div>
+            <div class="box box-3">
+                <label for="">CEP</label>
+                <input type="text" name="" id="cep" maxlength="8">
+                <div>
+                    <span> *Preenchimento automatico com CEP </span>
+                </div>
+
+                <div>
+                    <span id="erro">  </span>
+                </div>
+            </div>
+            <div class="box box-1">
+                <label for="">Endereço</label>
+                <input type="text" name="" id="endereco" disabled>
+            </div>
+            <div class="box box-2">
+                <label for="">Bairro</label>
+                <input type="text" name="" id="bairro" disabled>
+            </div>
+            <div class="box box-3" >
+                <label for="">Estado</label>
+                <input type="text" name="" id="estado" disabled>
+            </div>
+            <div class="box box-1">
+                <label for="">UF</label>
+                <input type="text" name="" id="uf" disabled>
+            </div>
+            <div class="box box-1">
+                <label for="">Javascript</label>
+                <input type="radio" name="l" id="js" >
+                <label for="">Java</label>
+                <input type="radio" name="l" id="java" >
+                <label for="">PHP</label>
+                <input type="radio" name="l" id="php" >
+            </div>
+        </form>
+    </div>
+</body>
+</html>

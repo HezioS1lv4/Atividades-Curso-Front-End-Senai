@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: dodgerblue;
+}
+
+.formulario h1{
+    text-align: center;
+    margin: 1em 0;
+    color: #fff;
+    
+}
+
+form{
+    display: grid;
+    border: 1px solid black;
+    width: 70%;
+    gap: 3em;
+    margin: 1em auto;
+    padding: 3em;
+    background-color: blanchedalmond;
+    box-shadow: 1px 1px 1px black;
+}
+
+form input{
+    padding: .7em;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.356);
+}
+
+form label{
+    font-size: 1.5em;
+}
+
+.box-1{
+    grid-column: 1/4;
+    box-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.192);
+    padding: 1em;
+}
+
+.box-3 span{
+    color: rgb(255, 0, 0);
+}

@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --azul : #18354d;
+    --amarelo: #ffd43b;
+    --cinza: #b9c2c9;
+}
+body{
+    background-color: var(--cinza);
+}
+
+div.form-cadastro{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ height: 50vh;
+ width: 50vh;
+ border: 3px solid black;
+ text-align: center;
+ background-color: var(--cinza);
+ padding: 30px;
+ border-radius: 10px;
+}
+div.form-cadastro input{
+    padding: 20px;
+    width: 90%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+div.form-cadastro button{
+    padding: 15px;
+    background-color: var(--amarelo);
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+    cursor: pointer;
+    opacity: .8;
+}
+
+div.form-cadastro button:hover{
+    opacity: 1;
+}
+
+main{height: 80vh;
+    justify-content: center;
+}
+
+div.cabecalho{
+    text-align: center;
+}
+
+div.cabecalho h1:nth-child(2){
+    color: var(--amarelo);
+} 
+
+div.textos #abrir-modal{
+    padding: 20px;
+    border: none;
+    background-color: var(--amarelo);
+    font-size: 19px;
+    color: var(--azul);
+    font-weight: bold;
+    border-radius: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+div.textos #abrir-modal:hover{
+    opacity: 1;
+}
+
+div.textos > div{
+    text-align: center;
+}
+
+div.imagem{
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+#fade, #modal{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 5;
+}
+
+#modal{
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+
+#modal.hide, #fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+button{
+    align-items: center;
+}
+.imagem{
+    text-align: center;
+    margin-top: 20%;
+}
+.textos{
+    width: 100%;text-align: center;
+}

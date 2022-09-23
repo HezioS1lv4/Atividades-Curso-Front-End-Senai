@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        img{
+            min-width: 300px;
+            max-width: 600px;
+        }
+
+        h1{
+            /* max vai sempre pegar o maior valor */
+          font-size: max(50px, 3vw);
+            
+        }
+
+        h2{
+            /* min vai sempre pegar o menor valor */
+            font-size: min(30px, 3vw);   
+        }
+
+        p{
+            /* font-size: max(20px, 2vw); */
+            /* em é tamanho realcionado ao elemento pai */
+            font: 2em;
+        }
+
+        @media screen and (max-width:500px){
+            h1{
+                color: red;
+            }
+
+            p{
+                font-size: 25px;
+            }
+        }
+
+        @media screen and (min-width: 600px){
+            h1{
+                color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1> Titulo de alguma coisa </h1>
+    <h2> Testando mais adaptaçoes </h2>
+     <img src="https://sm.ign.com/ign_br/screenshot/default/naruto-1498593686428-v2-1920x1080_pxb6.png" alt="">   
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores doloribus nemo ut blanditiis adipisci delectus nulla maxime, ratione, impedit deserunt voluptates itaque asperiores! Porro, amet pariatur? Fugit tempore debitis ullam.</p>
+</body>
+</html>

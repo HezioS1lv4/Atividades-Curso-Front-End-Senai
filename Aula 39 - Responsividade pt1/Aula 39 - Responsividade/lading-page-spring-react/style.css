@@ -1,0 +1,165 @@
+:root{
+    --cor-laranja: #ff8400;;
+    --cor-preto: #222222;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left, black, #ff8400);
+    width: 100%;
+}
+
+header{
+    text-align: center;
+    color: #fff;
+}
+
+header div#edicao{
+    font-size: min(15px, 5vw);
+}
+
+main{
+    display: flex;
+    margin: 2em auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+
+}
+
+section.section-1{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    align-items: center;
+    min-width: 500px;
+    max-width: 50%;
+   
+    border: 1px solid yellow;
+    
+}
+
+
+
+div.cabecalho{
+   
+    text-align: center;
+}
+
+div.cabecalho h1{
+    color: var(--cor-laranja);
+    font-size: max(30px, 2vw);
+    font-weight: bold;
+}
+
+div.cabecalho h2:last-child{
+    color: var(--cor-laranja);
+    font-weight: bold;
+}
+
+div.inscricao{
+    width: 100%;
+    padding: 2em;
+    background-color: var(--cor-preto);
+    border-radius: 10px;
+    
+}
+
+div.inscricao label{
+    color: #fff;
+}
+
+div.inscricao h1{
+    text-align: center;
+    font-weight: bolder;
+    color: var(--cor-laranja);
+    font-size: max(30px, 2vw) ;
+    
+}
+
+div.inscricao input{
+    padding: 1em;
+    width: 100%;
+    margin-top: 2em;
+}
+
+div.inscricao button{
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-laranja);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: .8;
+}
+
+div.inscricao button:hover{
+    opacity: 1;
+}
+
+div.form{
+    margin-bottom: 2em;
+}
+
+section.section-2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+ 
+}
+section.section-2 img{
+    min-width: 40%;
+    max-width: 500px;
+}
+
+/* Deixando a pagina responsiva */
+
+@media screen and (max-width: 1144px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* .section-2{
+      align-items: center;
+    } */
+}
+
+@media screen and (max-width: 390px ){
+    body{
+        background-repeat: no-repeat;
+    }
+
+    section.section-2 img{
+        min-width: 200px;
+        max-width: 250px;
+    }
+
+    section.section-1{
+        min-width: 250px;
+        max-width: 100%;      
+     }
+
+}
+
+@media screen and (max-width: 414px ){
+    section.section-1{
+        min-width: 300px;
+        
+     }
+}
+
+@media screen and (max-width: 517px){
+    
+
+    section.section-2 img{
+        min-width: 200px;
+        max-width: 250px;
+    }
+}

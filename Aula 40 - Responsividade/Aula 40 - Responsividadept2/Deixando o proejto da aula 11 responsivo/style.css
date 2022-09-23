@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-de-de-fundo:#0b0101;
+    --cor-letra: #ff7600;
+    --cor-icones: #de8300;
+    --fonte-principal: Montserrat, sans-serif;
+}
+body{
+    background-color: var(--cor-de-de-fundo);
+    color: white;
+    font-family: var(--fonte-principal);
+
+}
+
+.titulo{
+    font-size: min(30px , 3vw);
+}
+
+header img{
+    min-width: 15vw;
+    max-width: 70vw;
+}
+
+.titulo, header{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+
+    margin: 3em;
+    padding: 2em;
+}
+.titulo h1:nth-child(1){
+    color: var(--cor-letra);    
+} 
+
+
+footer{
+    
+ 
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+img{
+    width: 150px;
+}
+
+footer h2:nth-child(2){
+    color: var(--cor-letra);
+}
+
+.textos{
+    max-width: 30vw;
+    line-height: 2em;
+    align-self: flex-start;
+    font-size: max(20px , 1vw);
+}
+
+.icone{
+    width: 1.5em;
+}
+.formulario{
+   
+    max-width: 70vw;
+    min-width: 30vw;
+}
+form{
+    max-width: 70vw;
+    min-width: 30vw;
+   
+}
+.formulario input{
+    padding: 1em;
+    /* min-width: 50%;
+    max-width: 100%; */
+
+    outline: none;
+    width: 98%; 
+    margin: calc(2%/2);
+   
+}
+
+input[type=nome]{
+   
+}
+
+
+
+input[type=email]{
+  
+}
+
+input[type=submit]{
+
+    background-color: var(--cor-letra);
+    font-family:var(--fonte-principal);
+    color: white;
+    font-size: min(15px, 3vw);
+    font-weight: 700;
+    margin-top: .5em;
+    cursor: pointer;
+    
+
+}
+input::placeholder { 
+    font-size: min(1.5em, 4vw);
+}
+
+form div:last-child{
+
+    /* width: 100%; */
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 430px){
+     .formulario{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:553px) {
+    input[type=button]{
+        font-size: min(13px, 2vw);
+    }
+
+    .titulo{
+        font-size: max(20px, 3vw);
+    }
+
+    .textos p{
+        font-size: max(15px , 3vw);
+    }
+
+    form,.formulario{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .container{
+        margin: 1em;
+    }
+
+    input[type=submit]{
+        font-size: min(12px, 3vw);
+    }
+    
+}
+
+
+@media screen and (max-width: 1380px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textos{
+        align-self: center;
+        margin-bottom: 1em;
+        max-width: 100%;
+        font-size: min(20px , 3vw);
+    }
+}

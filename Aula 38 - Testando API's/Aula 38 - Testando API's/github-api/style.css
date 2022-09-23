@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#lista{
+    width: 40%;
+}
+
+.input{
+    margin: 2em;
+    background-color: blanchedalmond;
+    padding: 30px;
+    width: 20%;
+}
+
+.input input{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+
+}
+
+.usuarios{
+    border: 1px solid black;
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.usuarios p{
+    line-height: 3em;
+}
+
+.usuarios img{
+    width: 250px;
+}

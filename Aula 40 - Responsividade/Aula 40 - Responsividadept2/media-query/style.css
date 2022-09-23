@@ -1,0 +1,85 @@
+h1{
+    font-size: max(25px, 3vw);
+}
+
+img{
+    width: 50vw;
+}
+
+/* Media query */
+
+@media screen and (max-width: 700px){
+    h1{
+        color: red;
+    }
+}
+
+@media screen and (min-width: 300px){
+    h2{
+        color: blue;
+    }
+}
+
+/* Tipos de media query 
+    screen - Tela
+    print - A folha que sera impressa
+    speech - Sintezadores de fala
+*/
+
+@media print and (max-width: 600px){
+    h1{
+        color: green;
+    }
+}
+
+@media (min-width: 200px){
+    h2{
+        color: brown;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px){
+    p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+/* Orientation
+    landscape - horizontal
+    portrait - Vertical
+*/
+
+@media (max-width: 400px), (orientation: landscape){
+    img{
+        border-radius: 20px;
+    }
+}
+
+/* Mobile first - conceito de programaçao em que desenvolvemos primeiramente para dispositivos moveis e por ultimo os dispositivos maiores */
+
+/* 480px - 760px = tablet */
+@media (min-width: 480px){
+    h5{
+        color: burlywood
+    }
+}
+
+/* 768px - 1024px = telas menores, notebooks */
+@media (min-width: 768px){
+    h5{
+        color: cadetblue
+    }
+}
+
+/* 1024px - 1200px = desktop */
+@media (min-width: 1024px){
+    h5{
+        color: coral;
+    }
+}
+
+/* 1200px pra cima = telas maiores, tvs */
+@media (min-width: 1200px){
+    h5{
+        color: darkorchid;
+    }
+}
