@@ -1,0 +1,132 @@
+:root{
+    --cor-de-de-fundo:#0b0101;
+    --cor-letra: #ff7600;
+    --cor-icones: #de8300;
+    --fonte-principal: Montserrat, sans-serif;
+}
+body{
+    background-color: var(--cor-de-de-fundo);
+    color: white;
+    font-family: var(--fonte-principal);
+
+}
+
+.titulo, header{
+    text-align: center;
+    
+}
+section h1:nth-child(2){
+    font-size: 31px;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 19px;
+}
+.titulo h1:nth-child(1){
+    color: var(--cor-letra);
+    font-size: 42px;
+} 
+
+
+footer{
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+img{
+    width: 150px;
+}
+
+footer h2:nth-child(2){
+    color: var(--cor-letra);
+}
+
+.textos{
+    max-width: 450px;
+    line-height: 20px;
+    align-self: flex-start;
+}
+
+.icone{
+    width: 27px;
+}
+
+.formulario input{
+    padding: 15px;
+    width: 400px;
+    margin: 1%;
+    outline: none;
+   
+}
+
+input[type=nome]{
+   
+}
+
+/* input[type=submit]{
+    background-color: var(--cor-letra);
+    font-family: var(--fonte-principal);
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    width: 100% ;
+    margin-top: 0;
+    transition-property: top;
+    transition-duration: 2s;
+    margin-top: 5px;
+    box-shadow: inset 0 -4px 0 rgb(0 0 0 / 19%);
+    transition: top 1s linear;
+
+} */
+
+input[type=email]{
+  
+}
+
+input[type=submit]{
+    /* position: absolute;
+    top: 65%;
+    left: 55%; */
+    
+    background-color: var(--cor-letra);
+    font-family:var(--fonte-principal);
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    width: 100% ;
+    margin-top: 2px;
+    transition-property: top;
+    transition-duration: 2s;
+    margin-top: 5;
+    box-shadow: inset 0 -4px 0 rgb(0 0 0 / 19%);
+    transition: .2s ease-in-out;
+
+}
+input::placeholder { 
+    font-size: 17px;
+}
+
+/* input[type=submit]:hover{
+  
+  position: relative;
+  top: 2px;
+    box-shadow: none; 
+   cursor: pointer;  
+    
+} */
+
+input[type=submit]:hover{
+  
+    margin-top: 5px;
+    box-shadow: none; 
+    cursor: pointer;  
+       
+   }
