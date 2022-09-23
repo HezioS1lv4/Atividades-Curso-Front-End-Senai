@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX PT 1</title>
+
+    <style>
+        .container{
+            height: 100vh;
+            background-color: white;
+            /* display flex eu inicio o flexbox */
+            display: flex;
+
+            /* flex direction é a direçao dos elementos. Por padrao ela vem em linha (row) */
+            /* flex-direction: row; */
+
+
+            /* propriedade que alinha os elementos no eixo principal (eixo deifinido no flex-direction) */
+            justify-content: center;
+
+            /* Alinha os elementos no eixo perpendicular(eixo contrario) */
+            align-items: center;
+
+
+            /* flex-wrap: wrap;  propriedade de quebra de linha para caber os elementos. */
+
+
+             flex-flow: row wrap; /* propriedade em que decido em um comando o flex direction e o flex wrap */
+
+            align-content: center;/* Quando existe quebra de linha (flex-wrap) ele faz o alinhamento dos elementos no eixo perpendicular(eixo contrario) */
+
+            /* column-gap: 10px;
+            row-gap: 30px;  espaçamento entre linhas e colunas dos elementos*/
+            gap: 30px 10px; /* Dessa maneira, decido o espaçamento da linha e coluna, respectivamente. E se quiser o mesmo espaçamento nos dois basta colocar um valor. */
+        }
+
+        .box{
+            width: 150px ;
+            height: 100px;
+            border: 1px solid black;
+            padding: 10px;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .box-1{
+            background-color: white; color: rgb(26, 15, 126);
+            height: 340px; width: 170px;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .box-2{
+            background: linear-gradient(to bottom , rgb(47, 6, 197), rgb(81, 193, 201));
+            height: 340px; width: 170px;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .box-3{
+            background-color: white; color: rgb(39, 27, 146);
+            height: 340px; width: 170px;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        
+        .price{
+            color: rgb(25, 156, 156);
+        }
+        button{
+            padding: 8.5px;
+            border: none;
+            border-radius: 20px;
+        }
+        .buttom1{
+            width: 145px;
+            margin-bottom: 10%;
+            background-color: rgb(58, 189, 178); color: white;
+        }
+        .buttom2{
+             
+        }
+        .buttom3{
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="box box-1">
+            <p>SMD <br> BASIC </p>
+            <p>6 month program </p>
+            <p class="price">$595</p>
+            <p>2 physician visits</p>
+            <p>12 coaching segments</p>
+            <p>24 program worksheets</p>
+            <br>
+            <button class="buttom1">BUY NOW</button> 
+            <button class="buttom2">PROGRAM DETAILS</button>
+        </div>
+
+        <div class="box box-2">
+            <p>SMD <br> BASIC </p>
+            <p>6 month program </p>
+            <p class="price">$595</p>
+            <p>2 physician visits</p>
+            <p>12 coaching segments</p>
+            <p>24 program worksheets</p>
+            <br>
+            <button class="buttom1">BUY NOW</button>
+            <button class="buttom2">PROGRAM DETAILS</button>
+        </div>
+
+        <div class="box box-3">
+            <p>SMD <br> BASIC </p>
+            <p>6 month program </p>
+            <p class="price">$595</p>
+            <p>2 physician visits</p>
+            <p>12 coaching segments</p>
+            <p>24 program worksheets</p>
+            <br>
+            <button class="buttom1">BUY NOW</button>
+            <button class="buttom2">PROGRAM DETAILS</button>
+        </div>
+    </main>
+</body>
+</html>
