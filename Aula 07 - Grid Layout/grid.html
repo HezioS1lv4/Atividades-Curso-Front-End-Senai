@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            background-color: gray;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .box1{
+            background-color: black;
+            color: white;
+            padding-top: 1%;
+            padding-left: 1%;
+            padding-bottom: 1%;
+        }
+
+        .lg{
+            margin-left: 3%;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 5fr 0fr 1fr;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <a href="https://www.riotgames.com/pt-br">
+                <img src="https://www.cisco.com/c/pt_br/about/case-studies-customer-success-stories/riot-games/jcr:content/Grid/category_atl/layout-category-atl/blade_1895754487/bladeContents/halves/H-Half-1/emphasis_copy/emphasisContents/image/image.img.png/1638353138726.png" width="125" height="60" alt="Logo Riot">
+            </a>
+            <a class="lg" href="https://www.leagueoflegends.com/pt-br/?_gl=1*gsbfhe*_ga*MTM0Njc3NDEyLjE2NTMwODA5OTE.*_ga_FXBJE5DEDD*MTY1NjI5NjcxNC4yLjEuMTY1NjI5OTMwMS42MA..&_ga=2.250983172.367857325.1656296544-134677412.1653080991">
+                <img src="logo league.png" width="125" height="60" alt="Logo leagueoflegends">
+            </a>
+            <br>
+        </div>
+        <div class="box">DIV 2</div>
+        <div class="box">DIV 3</div>
+        <div class="box">DIV 4</div>
+    </div>
+</body>
+</html>
