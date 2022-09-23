@@ -1,0 +1,47 @@
+
+        body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: blueviolet; color: aliceblue;
+        }
+
+        img{
+            width: 230px; 
+            height: 200px;
+            object-fit: cover;
+            border-radius: 30%;
+        } 
+        main{
+            background-color: cadetblue;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            border: 1px solid black; padding: 20px;
+            border-radius: 15px;
+        }
+
+        label{
+            font-size: 22px;
+            font-weight: bold;
+        }
+        input,button{
+            padding: 10px;
+            border-radius: 15px;
+            border: none;
+        }
+
+        input{
+            outline: none;
+        }
+        button{
+            opacity: 0.8;
+            cursor: pointer;
+            color: aliceblue;
+            background-color: blueviolet;
+        }
+        button:hover{
+            opacity: 1;
+        }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copiaLastFm</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        main{
+            background-color: antiquewhite;
+            padding: 6em; border-radius: 15px;
+        }
+
+        input,button{
+            padding: 10px;
+            border: none; border-radius: 15px;
+        }
+        input{
+            outline: none;
+        }
+
+        button{
+            cursor: pointer;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        
+        <h1>Transformador de Fahrenheit para Celsius</h1>
+        <br> <br>
+        <label for="">Temperatura em Fahrenheit: </label>
+        <input type="text" name="f" id="f">
+        <br> <br>
+        <h2 id="resp"></h2>
+        <button id="btn">Clique aqui</button>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script >
+        var num = document.getElementById("f")
+        
+        var resp = document.getElementById("resp")
+
+        var btn = document.getElementById("btn")
+
+
+        function resultado(){
+            var fahrenheit = Number(f.value)
+            var c = (5*(fahrenheit-32)/9)
+
+            resp.innerHTML = `A temperatura em F(${fahrenheit}), transformada pra Celsius: (${c})`
+
+        }
+        btn.addEventListener('click', resultado)
+    </script>
+
+</body>
+</html>

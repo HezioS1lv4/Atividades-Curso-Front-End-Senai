@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copiaLastFm</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        main{
+            background-color: antiquewhite;
+            padding: 6em; border-radius: 15px;
+        }
+
+        input,button{
+            padding: 10px;
+            border: none; border-radius: 15px;
+        }
+        input{
+            outline: none;
+        }
+
+        button{
+            cursor: pointer;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        
+        <h1>Qual a Área do Triângulo?</h1>
+        <br> <br>
+        <label for="">Nome: </label>
+        <input type="text" name="nome" id="nome">
+        <br> <br>
+        <label for="">Idade: </label>
+        <input type="text" name="idade" id="idade">
+        <br> <br>
+        <label for="">Salário: </label>
+        <input type="text" name="salario" id="salario">
+        <br> <br>
+        <h2 id="resp"></h2>
+        <button id="btn">Clique aqui</button>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script >
+        var nome= document.getElementById("nome")
+        
+        var idade= document.getElementById("idade")
+
+        var salario = document.getElementById("salario")
+
+        var btn = document.getElementById("btn")
+
+
+        function resultado(){
+            var age = Number(idade.value)
+            var money = Number(salario.value)
+            var name = nome
+            resp.innerHTML = `Olá ${name}, parabéns pelos seus ${age} anos e pelo seu salário de: R$ ${money} }`
+
+        }
+        btn.addEventListener('click', resultado)
+    </script>
+
+</body>
+</html>

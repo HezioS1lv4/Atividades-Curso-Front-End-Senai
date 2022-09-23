@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copiaLastFm</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        main{
+            background-color: antiquewhite;
+            padding: 6em; border-radius: 15px;
+        }
+
+        input,button{
+            padding: 10px;
+            border: none; border-radius: 15px;
+        }
+        input{
+            outline: none;
+        }
+
+        button{
+            cursor: pointer;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <header>
+    </header>
+
+    <main>
+        
+        <h1>Qual a Área do Triângulo?</h1>
+        <br> <br>
+        <label for="">Base: </label>
+        <input type="text" name="base" id="base">
+        <br> <br>
+        <label for="">Altura: </label>
+        <input type="text" name="altura" id="altura">
+        <br> <br>
+        <h2 id="resp"></h2>
+        <button id="btn">Clique aqui</button>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script >
+        var base= document.getElementById("base")
+        
+        var altura = document.getElementById("altura")
+
+        var btn = document.getElementById("btn")
+
+
+        function resultado(){
+            var bas3 = Number(base.value)
+            var altur4 = Number(altura.value)
+
+            var area = (bas3*altur4)/2
+
+            resp.innerHTML = `A área do triangulo é de: ${area}`
+
+        }
+        btn.addEventListener('click', resultado)
+    </script>
+
+</body>
+</html>
