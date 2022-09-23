@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center; color: black;
+    background-color: whitesmoke;
+}
+
+main{
+    background-color: goldenrod;
+    height: 50vh;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px whitesmoke;
+}
+
+input,button{
+    padding: .7em;
+    border: none;
+    border-radius: 1em;
+    outline: none;
+}
+
+button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+button:hover{
+    opacity: 1;
+}
