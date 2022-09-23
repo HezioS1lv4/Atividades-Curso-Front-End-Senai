@@ -1,0 +1,68 @@
+body{
+    background-image: url(fundo.jpg);
+}
+
+main{
+    margin: auto;
+    background-image: url(background.jpeg);
+    width: 700px;
+    height: 700px;
+    border-radius: 5%;
+    border-style: outset;
+}
+.logos2{
+    width: 50px;
+}
+img{
+    padding: 15px;
+    width: 259px;
+    margin: auto;
+    display: block;    
+}
+
+.ifood {
+    margin-right: 88%;
+    width: 45px;
+    height: 45px;
+}
+.i{
+    padding: 12px;
+    margin-top: -33%;
+    margin-right: 58%;
+}
+.whatsapp {
+    width: 63px;;
+    height: 63px;;
+    margin-right: 100%;    
+}
+.w{
+    margin-top: 8%;
+    margin-right: 46%;
+    color: white;
+}
+a{
+    color: white;
+}
+.telefone {
+    margin-right: 88%;
+    width: 45px;
+    height: 45px
+}
+.t{
+    margin-top: 9%;
+    margin-right: 59%;
+}
+
+p{
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+footer{
+    color: white;
+    margin-left: 47%
+}
+.d{
+    padding-top: -50%;
+}
+
